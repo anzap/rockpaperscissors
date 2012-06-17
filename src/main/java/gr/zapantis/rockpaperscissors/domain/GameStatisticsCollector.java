@@ -1,4 +1,5 @@
-package gr.zapantis.rockpaperscissors;
+package gr.zapantis.rockpaperscissors.domain;
+
 
 import java.util.HashMap;
 import java.util.Map;

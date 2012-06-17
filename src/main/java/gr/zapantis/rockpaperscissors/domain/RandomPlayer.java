@@ -1,4 +1,6 @@
-package gr.zapantis.rockpaperscissors;
+package gr.zapantis.rockpaperscissors.domain;
+
+import gr.zapantis.rockpaperscissors.utils.RandomMoveGenerator;
 
 /**
  * Concrete implementation of a player that chooses a random move in each round.

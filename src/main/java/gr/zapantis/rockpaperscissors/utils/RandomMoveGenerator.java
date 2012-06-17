@@ -1,4 +1,6 @@
-package gr.zapantis.rockpaperscissors;
+package gr.zapantis.rockpaperscissors.utils;
+
+import gr.zapantis.rockpaperscissors.domain.Move;
 
 import java.security.SecureRandom;
 import java.util.Random;

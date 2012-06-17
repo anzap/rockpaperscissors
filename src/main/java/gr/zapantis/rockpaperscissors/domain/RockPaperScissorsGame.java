@@ -1,4 +1,6 @@
-package gr.zapantis.rockpaperscissors;
+package gr.zapantis.rockpaperscissors.domain;
+
+import gr.zapantis.rockpaperscissors.utils.WinChecker;
 
 /**
  * Class implementing a Rock Paper Scissors game.

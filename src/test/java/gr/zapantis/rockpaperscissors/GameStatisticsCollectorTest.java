@@ -3,6 +3,13 @@ package gr.zapantis.rockpaperscissors;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
+import gr.zapantis.rockpaperscissors.domain.GameStatisticsCollector;
+import gr.zapantis.rockpaperscissors.domain.Outcome;
+import gr.zapantis.rockpaperscissors.domain.PaperPlayer;
+import gr.zapantis.rockpaperscissors.domain.Player;
+import gr.zapantis.rockpaperscissors.domain.RockPaperScissorsGame;
+import gr.zapantis.rockpaperscissors.domain.ScissorsPlayer;
+
 import java.util.Map;
 
 import org.junit.Before;

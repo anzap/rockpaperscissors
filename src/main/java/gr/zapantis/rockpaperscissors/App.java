@@ -1,5 +1,11 @@
 package gr.zapantis.rockpaperscissors;
 
+import gr.zapantis.rockpaperscissors.domain.GameStatisticsCollector;
+import gr.zapantis.rockpaperscissors.domain.Outcome;
+import gr.zapantis.rockpaperscissors.domain.PaperPlayer;
+import gr.zapantis.rockpaperscissors.domain.RandomPlayer;
+import gr.zapantis.rockpaperscissors.domain.RockPaperScissorsGame;
+
 import java.util.Map;
 
 /**
@@ -10,9 +16,9 @@ public class App {
 	private static final int GAME_ROUNDS = 100;
 
 	public static void main(String[] args) {
-		PaperPlayer firstPlayer = new PaperPlayer("A");
-		RandomPlayer secondPlayer = new RandomPlayer("B");
-		RockPaperScissorsGame game = new RockPaperScissorsGame(firstPlayer, secondPlayer);
+		PaperPlayer paperPlayer = new PaperPlayer("A");
+		RandomPlayer randomPlayer = new RandomPlayer("B");
+		RockPaperScissorsGame game = new RockPaperScissorsGame(paperPlayer, randomPlayer);
 		
 		GameStatisticsCollector gameStatisticsCollector = new GameStatisticsCollector(game, GAME_ROUNDS);
 		Map<Outcome, Integer> statistics = gameStatisticsCollector.gatherStatisticsForGamePlays();

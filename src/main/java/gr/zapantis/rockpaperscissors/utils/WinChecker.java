@@ -1,4 +1,7 @@
-package gr.zapantis.rockpaperscissors;
+package gr.zapantis.rockpaperscissors.utils;
+
+import gr.zapantis.rockpaperscissors.domain.Move;
+import gr.zapantis.rockpaperscissors.domain.Outcome;
 
 /**
  * Class that implements the strategy for evaluating the winner between two

@@ -1,4 +1,5 @@
-package gr.zapantis.rockpaperscissors;
+package gr.zapantis.rockpaperscissors.domain;
+
 
 /**
  * Abstract class representing a game player.

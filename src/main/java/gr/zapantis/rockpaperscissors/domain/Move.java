@@ -1,4 +1,4 @@
-package gr.zapantis.rockpaperscissors;
+package gr.zapantis.rockpaperscissors.domain;
 
 /**
  * Enum representing the different legal moves a player can make.

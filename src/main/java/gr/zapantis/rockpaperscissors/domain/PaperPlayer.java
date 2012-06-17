@@ -1,4 +1,5 @@
-package gr.zapantis.rockpaperscissors;
+package gr.zapantis.rockpaperscissors.domain;
+
 
 /**
  * Concrete implementation of a player that always chooses a PAPER move.

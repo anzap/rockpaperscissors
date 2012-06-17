@@ -1,6 +1,9 @@
 package gr.zapantis.rockpaperscissors;
 
 import static org.junit.Assert.assertEquals;
+import gr.zapantis.rockpaperscissors.domain.Move;
+import gr.zapantis.rockpaperscissors.domain.Outcome;
+import gr.zapantis.rockpaperscissors.utils.WinChecker;
 
 import org.junit.Test;
 

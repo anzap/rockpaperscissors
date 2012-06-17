@@ -1,4 +1,4 @@
-package gr.zapantis.rockpaperscissors;
+package gr.zapantis.rockpaperscissors.domain;
 
 /**
  * Enum representing the valid outcomes of a game round.
