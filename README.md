@@ -1,4 +1,5 @@
-# Rock Paper Scissors Project
+Rock Paper Scissors Project
+======
 
 This is a sample project implementing a Rock Paper Scissors game in Java.
 The project is based on maven build system.
