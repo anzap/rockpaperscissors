@@ -1,7 +1,7 @@
 package gr.zapantis.rockpaperscissors;
 
 public class RockPaperScissorsGame {
-	
+
 	public Outcome round(Player firstPlayer, Player secondPlayer) {
 		return calculateWinner(firstPlayer, secondPlayer);
 	}
