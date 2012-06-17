@@ -27,5 +27,20 @@ public class RulesTest {
 		assertEquals(Outcome.TIE, WinChecker.evaluateWinner(Move.ROCK, Move.ROCK));
 		assertEquals(Outcome.TIE, WinChecker.evaluateWinner(Move.SCISSORS, Move.SCISSORS));
 	}
+	
+	@Test
+	public void paperLosesFromScissors() {
+		assertEquals(Outcome.LOSS, WinChecker.evaluateWinner(Move.PAPER, Move.SCISSORS));
+	}
+	
+	@Test
+	public void scissorsLosesFromRock() {
+		assertEquals(Outcome.LOSS, WinChecker.evaluateWinner(Move.SCISSORS, Move.ROCK));
+	}
+	
+	@Test
+	public void rockLosesFromPaper() {
+		assertEquals(Outcome.LOSS, WinChecker.evaluateWinner(Move.ROCK, Move.PAPER));
+	}
 
 }
