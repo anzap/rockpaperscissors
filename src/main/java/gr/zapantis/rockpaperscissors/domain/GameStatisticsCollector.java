@@ -1,5 +1,6 @@
 package gr.zapantis.rockpaperscissors.domain;
 
+import gr.zapantis.rockpaperscissors.exceptions.RockPaperScissorsException;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,11 +18,19 @@ public class GameStatisticsCollector {
 	private final int timesToPlay;
 
 	public GameStatisticsCollector(RockPaperScissorsGame game, int timesToPlay) {
+		if (game == null) {
+			throw new RockPaperScissorsException("A game should be defined.");
+		}
+		
+		if (timesToPlay < 0) {
+			throw new RockPaperScissorsException("The defined times to play the game should be a positive number.");
+		}
 		this.game = game;
 		this.timesToPlay = timesToPlay;
 	}
 
 	public Map<Outcome, Integer> gatherStatisticsForGamePlays() {
+
 
 		@SuppressWarnings("serial")
 		Map<Outcome, Integer> statistics = new HashMap<Outcome, Integer>() {

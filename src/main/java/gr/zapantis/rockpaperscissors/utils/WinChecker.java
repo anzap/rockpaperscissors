@@ -2,6 +2,7 @@ package gr.zapantis.rockpaperscissors.utils;
 
 import gr.zapantis.rockpaperscissors.domain.Move;
 import gr.zapantis.rockpaperscissors.domain.Outcome;
+import gr.zapantis.rockpaperscissors.exceptions.RockPaperScissorsException;
 
 /**
  * Class that implements the strategy for evaluating the winner between two
@@ -13,6 +14,12 @@ import gr.zapantis.rockpaperscissors.domain.Outcome;
 public final class WinChecker {
 
 	public static Outcome evaluateWinner(Move firstMove, Move secondMove) {
+
+		if (firstMove == null || secondMove == null) {
+			throw new RockPaperScissorsException(
+					"Both move should be defined to evaluate a winner.");
+		}
+
 		Outcome outcome = Outcome.TIE;
 
 		/*
