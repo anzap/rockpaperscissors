@@ -8,8 +8,8 @@ public class RockPaperScissorsGameTest {
 	
 	@Test
 	public void createGame() {
-		RockPaperScissorsGameTest rockPaperScissorsGameTest = new RockPaperScissorsGameTest();
-		assertNotNull(rockPaperScissorsGameTest);
+		RockPaperScissorsGame rockPaperScissorsGame = new RockPaperScissorsGame();
+		assertNotNull(rockPaperScissorsGame);
 	}
 
 }
