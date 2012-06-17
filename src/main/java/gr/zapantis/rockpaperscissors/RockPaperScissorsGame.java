@@ -1,7 +1,13 @@
 package gr.zapantis.rockpaperscissors;
 
+/**
+ * Class implementing a Rock Paper Scissors game.
+ * 
+ * @author Andreas
+ * 
+ */
 public class RockPaperScissorsGame {
-	
+
 	private final Player firstPlayer;
 	private final Player secondPlayer;
 
@@ -11,8 +17,8 @@ public class RockPaperScissorsGame {
 	}
 
 	public Outcome round() {
-		System.out.println("RockPaperScissorsGame.round() "+firstPlayer.getMove()+" "+secondPlayer.getMove());
-		return WinChecker.evaluateWinner(firstPlayer.getMove(), secondPlayer.getMove());
+		return WinChecker.evaluateWinner(firstPlayer.getMove(),
+				secondPlayer.getMove());
 	}
 
 }

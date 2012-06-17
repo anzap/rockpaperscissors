@@ -3,11 +3,11 @@ package gr.zapantis.rockpaperscissors;
 import java.util.Map;
 
 /**
- * Hello world!
+ * Client code creating a series of Rock Paper Scissors games.
  * 
  */
 public class App {
-	private static final int GAME_ROUNDS = 1000;
+	private static final int GAME_ROUNDS = 100;
 
 	public static void main(String[] args) {
 		PaperPlayer firstPlayer = new PaperPlayer("A");

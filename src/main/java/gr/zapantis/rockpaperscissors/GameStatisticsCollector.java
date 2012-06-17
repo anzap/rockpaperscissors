@@ -3,6 +3,13 @@ package gr.zapantis.rockpaperscissors;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Class responsible for playing a game multiple times and gathering the
+ * statistics for the outcome of each round.
+ * 
+ * @author Andreas
+ * 
+ */
 public class GameStatisticsCollector {
 
 	private final RockPaperScissorsGame game;

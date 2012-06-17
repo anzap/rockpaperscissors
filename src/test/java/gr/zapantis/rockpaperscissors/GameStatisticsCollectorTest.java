@@ -11,12 +11,12 @@ import org.junit.Test;
 public class GameStatisticsCollectorTest {
 
 	private GameStatisticsCollector gameStatisticsCollector;
+	private int timesToPlay = 10;
 
 	@Before
 	public void setUp() {
 		Player firstPlayer = new PaperPlayer("A");
 		Player secondPlayer = new ScissorsPlayer("B");
-		int timesToPlay = 10;
 		gameStatisticsCollector = new GameStatisticsCollector(
 				new RockPaperScissorsGame(firstPlayer, secondPlayer),
 				timesToPlay);
@@ -35,6 +35,8 @@ public class GameStatisticsCollectorTest {
 		assertTrue(0 == statistics.get(Outcome.WIN));
 		assertTrue(10 == statistics.get(Outcome.LOSS));
 		assertTrue(0 == statistics.get(Outcome.TIE));
+		assertTrue(10 == (statistics.get(Outcome.WIN)
+				+ statistics.get(Outcome.LOSS) + statistics.get(Outcome.TIE)));
 	}
 
 }

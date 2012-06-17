@@ -1,5 +1,11 @@
 package gr.zapantis.rockpaperscissors;
 
+/**
+ * Concrete implementation of a player that always chooses a ROCK move.
+ * 
+ * @author Andreas
+ * 
+ */
 public class RockPlayer extends Player {
 
 	public RockPlayer(String name) {
