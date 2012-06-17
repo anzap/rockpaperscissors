@@ -1,5 +1,7 @@
 package gr.zapantis.rockpaperscissors;
 
+import java.util.HashMap;
+import java.util.Map;
 
 public class GameStatisticsCollector {
 
@@ -11,10 +13,23 @@ public class GameStatisticsCollector {
 		this.timesToPlay = timesToPlay;
 	}
 
-	public void gatherStatisticsForGamePlays() {
+	public Map<Outcome, Integer> gatherStatisticsForGamePlays() {
+
+		@SuppressWarnings("serial")
+		Map<Outcome, Integer> statistics = new HashMap<Outcome, Integer>() {
+			{
+				put(Outcome.WIN, 0);
+				put(Outcome.LOSS, 0);
+				put(Outcome.TIE, 0);
+			}
+		};
+
 		for (int i = 0; i < timesToPlay; i++) {
-			game.round();
+			Outcome roundOutcome = game.round();
+			statistics.put(roundOutcome, statistics.get(roundOutcome) + 1);
 		}
+
+		return statistics;
 	}
 
 }
