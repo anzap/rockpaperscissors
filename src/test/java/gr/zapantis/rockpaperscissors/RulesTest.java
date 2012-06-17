@@ -1,6 +1,6 @@
 package gr.zapantis.rockpaperscissors;
 
-import static org.junit.Assert.fail;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
@@ -8,22 +8,24 @@ public class RulesTest {
 
 	@Test
 	public void scissorsBeatsPaper() {
-		fail("Not implemented yet");
+		assertEquals(Outcome.WIN, WinChecker.evaluateWinner(Move.SCISSORS, Move.PAPER));
 	}
 
 	@Test
 	public void rockBeatsScissors() {
-		fail("Not implemented yet");
+		assertEquals(Outcome.WIN, WinChecker.evaluateWinner(Move.ROCK, Move.SCISSORS));
 	}
 
 	@Test
 	public void paperBeatsRock() {
-		fail("Not implemented yet");
+		assertEquals(Outcome.WIN, WinChecker.evaluateWinner(Move.PAPER, Move.ROCK));
 	}
 	
 	@Test
 	public void equalMovesAreATie() {
-		fail("Not implemented yet");
+		assertEquals(Outcome.TIE, WinChecker.evaluateWinner(Move.PAPER, Move.PAPER));
+		assertEquals(Outcome.TIE, WinChecker.evaluateWinner(Move.ROCK, Move.ROCK));
+		assertEquals(Outcome.TIE, WinChecker.evaluateWinner(Move.SCISSORS, Move.SCISSORS));
 	}
 
 }
