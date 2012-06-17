@@ -11,7 +11,7 @@ public class RockPaperScissorsGameTest {
 	
 	@Before
 	public void setup() {
-		game = new RockPaperScissorsGame(new Player("A", Move.PAPER), new Player("B", Move.ROCK));
+		game = new RockPaperScissorsGame(new PaperPlayer("A"), new RockPlayer("B"));
 	}
 	
 	@Test

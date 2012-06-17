@@ -11,6 +11,7 @@ public class RockPaperScissorsGame {
 	}
 
 	public Outcome round() {
+		System.out.println("RockPaperScissorsGame.round() "+firstPlayer.getMove()+" "+secondPlayer.getMove());
 		return WinChecker.evaluateWinner(firstPlayer.getMove(), secondPlayer.getMove());
 	}
 

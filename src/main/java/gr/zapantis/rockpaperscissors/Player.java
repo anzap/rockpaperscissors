@@ -1,21 +1,17 @@
 package gr.zapantis.rockpaperscissors;
 
-public class Player {
+public abstract class Player {
 
-	private String name;
-	private final Move move;
+	private final String name;
 
-	public Player(String name, Move move) {
+	public Player(String name) {
 		this.name = name;
-		this.move = move;
 	}
 
 	public String getName() {
 		return name;
 	}
 
-	public Move getMove() {
-		return move;
-	}
+	public abstract Move getMove();
 
 }

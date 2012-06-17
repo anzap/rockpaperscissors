@@ -14,8 +14,8 @@ public class GameStatisticsCollectorTest {
 
 	@Before
 	public void setUp() {
-		Player firstPlayer = new Player("A", Move.PAPER);
-		Player secondPlayer = new Player("B", Move.SCISSORS);
+		Player firstPlayer = new PaperPlayer("A");
+		Player secondPlayer = new ScissorsPlayer("B");
 		int timesToPlay = 10;
 		gameStatisticsCollector = new GameStatisticsCollector(
 				new RockPaperScissorsGame(firstPlayer, secondPlayer),
