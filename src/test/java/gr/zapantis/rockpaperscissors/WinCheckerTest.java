@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-public class RulesTest {
+public class WinCheckerTest {
 
 	@Test
 	public void scissorsBeatsPaper() {
