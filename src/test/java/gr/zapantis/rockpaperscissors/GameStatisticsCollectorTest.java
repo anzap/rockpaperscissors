@@ -40,7 +40,7 @@ public class GameStatisticsCollectorTest {
 	@Test
 	public void gatherStatisticsResults() {
 		Map<Outcome, Integer> statistics = gameStatisticsCollector
-				.gatherStatisticsForGamePlays();
+				.playGameAndGatherStatistics();
 		assertTrue(0 == statistics.get(Outcome.WIN));
 		assertTrue(10 == statistics.get(Outcome.LOSS));
 		assertTrue(0 == statistics.get(Outcome.TIE));

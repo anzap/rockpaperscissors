@@ -29,7 +29,7 @@ public class GameStatisticsCollector {
 		this.timesToPlay = timesToPlay;
 	}
 
-	public Map<Outcome, Integer> gatherStatisticsForGamePlays() {
+	public Map<Outcome, Integer> playGameAndGatherStatistics() {
 
 
 		@SuppressWarnings("serial")

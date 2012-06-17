@@ -37,7 +37,7 @@ public class App {
 			GameStatisticsCollector gameStatisticsCollector = new GameStatisticsCollector(
 					game, timesToPlay);
 			Map<Outcome, Integer> statistics = gameStatisticsCollector
-					.gatherStatisticsForGamePlays();
+					.playGameAndGatherStatistics();
 
 			System.out.println(String.format("Player A wins %d of %d games",
 					statistics.get(Outcome.WIN), timesToPlay));
